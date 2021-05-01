@@ -5,5 +5,7 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("wsl_practice_code")
 
+include_directories(${CMAKE_SOURCE_DIR}/common)
 # 包含子项目。
+add_subdirectory ("leetcode")
 add_subdirectory ("wsl_practice_code")
