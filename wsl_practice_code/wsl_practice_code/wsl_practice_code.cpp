@@ -2,14 +2,13 @@
 //
 #include "common/common.h"
 #include "wsl_practice_code.h"
-#include "leetcode/BrickWall.hpp"
+#include "leetcode/Reverse Integer.hpp"
 using namespace std;
 
 int main()
 {
-	auto paramMatrix = wslFunc::makeMatrix(R"([[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1]])");
 	Solution s;
-	s.leastBricks(paramMatrix);
+	s.reverse(-2147483412);
 	cout << "Hello CMake." << endl;
 	return 0;
 }
