@@ -7,5 +7,6 @@ project ("wsl_practice_code")
 
 include_directories(${CMAKE_SOURCE_DIR}/common)
 # 包含子项目。
+add_subdirectory ("common")
 add_subdirectory ("leetcode")
 add_subdirectory ("wsl_practice_code")
