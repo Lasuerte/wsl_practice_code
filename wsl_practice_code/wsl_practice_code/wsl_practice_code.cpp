@@ -2,13 +2,18 @@
 //
 #include "common/common.h"
 #include "wsl_practice_code.h"
-#include "leetcode/Reverse Integer.hpp"
+#include "Delete and Earn.hpp"
+//#include "Maxium Subarray.hpp"
 using namespace std;
 
 int main()
 {
+    string arrayA = "[3,1,4,5,1,3,7,2,9,1,4,5,2,1]";
+	auto vecA = wslFunc::makeVector(arrayA);
+	wslSort::quickSort(vecA);
 	Solution s;
-	s.reverse(-2147483412);
+	
+	cout << s.deleteAndEarn(vecA) << endl;
 	cout << "Hello CMake." << endl;
 	return 0;
 }

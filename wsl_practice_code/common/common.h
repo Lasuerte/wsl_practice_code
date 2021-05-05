@@ -14,3 +14,4 @@
 
 using namespace std;
 #include "makeStructs.h"
+#include "sortFunc.h"
