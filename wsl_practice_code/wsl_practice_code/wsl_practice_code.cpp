@@ -2,18 +2,23 @@
 //
 #include "common/common.h"
 #include "wsl_practice_code.h"
-#include "Delete and Earn.hpp"
+#include "Rotate Matrix.hpp"
 //#include "Maxium Subarray.hpp"
 using namespace std;
 
 int main()
 {
-    string arrayA = "[3,1,4,5,1,3,7,2,9,1,4,5,2,1]";
-	auto vecA = wslFunc::makeVector(arrayA);
-	wslSort::quickSort(vecA);
+    string arrayA = "[\
+		[5, 1, 9, 11],\
+		[2, 4, 8, 10],\
+		[13, 3, 6, 7],\
+		[15, 14, 12, 16]\
+]";
+	auto vecA = wslFunc::makeMatrix(arrayA);
+
 	Solution s;
 	
-	cout << s.deleteAndEarn(vecA) << endl;
+	s.rotate(vecA);
 	cout << "Hello CMake." << endl;
 	return 0;
 }
